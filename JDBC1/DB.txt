@@ -1,0 +1,16 @@
+insert into user (firstName,lastName,email,password) values('Ahmed','Zubair','ahmed@szabist-isb.pk','54236');
+select * from user;
+
+UPDATE `user` SET `password`='542367', lastName='Ahmed chatta' where id=1;
+
+delete from user where id=6;
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `firstName` varchar(45) DEFAULT NULL,
+  `lastName` varchar(45) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `password` varchar(45) DEFAULT NULL,
+  `createDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
